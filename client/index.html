@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="main.js">
+        </script>
+        <style>
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: stretch;
+                width: 100%;
+            }
+            .item1 {
+                width: 50%;
+                height: 100%;
+                background-color: mediumaquamarine;
+                text-align: center;
+
+            }
+            .item2 {
+                width: 50%;
+                height: 100%;
+                background-color: indianred;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body onload="getTimeServer()">
+       <div class = "flex-container">
+        <div class = "item1">
+            <p id='clock_local'></p>
+        </div>
+        <div class = "item2">
+            <p id='clock_server'></p>
+        </div>
+       </div> 
+    </body>
+</html>
